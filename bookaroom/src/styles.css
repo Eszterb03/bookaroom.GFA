@@ -1,1 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
+
+.body {
+    display: flex;
+    align-items: center;
+}
+
+.table {
+    position: absolute;
+    text-align: center;
+    margin: auto;
+    right: 0;
+    left: 0;
+    width: 80%;
+}
+
+.first {
+    background: whitesmoke;
+}
+
+.second {
+    background: #3cb878;
+    opacity: 0.8;
+}
