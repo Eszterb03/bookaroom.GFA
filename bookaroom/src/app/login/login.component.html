@@ -1,3 +1,17 @@
-<p>
-  login works!
-</p>
+      <div>
+      <h1> 
+        BookARoom
+      </h1>
+      
+      <button
+        *ngIf="!auth.isAuthenticated()"
+        (click)="auth.login()">
+          Log In
+      </button>
+
+      <button
+        *ngIf="auth.isAuthenticated()"
+        (click)="auth.logout()">
+          Log Out
+      </button>
+    </div>
