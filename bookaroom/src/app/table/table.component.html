@@ -1,3 +1,19 @@
-<p>
-  table works!
-</p>
+<body>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">Time</th>
+                <th scope="col" *ngFor="let room of rooms;">{{room}}</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="first" *ngFor="let t of time; let i=index;" scope=" rowfirst">{{9+i}}-{{10+i}}
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+                <td>valaki</td>
+                <td>más valaki</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
