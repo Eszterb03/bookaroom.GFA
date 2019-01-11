@@ -11,13 +11,14 @@ export class AuthService {
   private _idToken: string;
   private _accessToken: string;
   private _expiresAt: number;
+  public userName: string;
 
   auth0 = new auth0.WebAuth({
     clientID: '41xxuWw6dzbWrK3YXqsDZzUMtHU3RIZ4',
     domain: 'davidjakoi.eu.auth0.com',
     responseType: 'token id_token',
     redirectUri: 'http://localhost:4200/main',
-    scope: 'openid profile email'
+    scope: 'openid profile email offline_access'
   })
 
   constructor(public router: Router) {
@@ -59,7 +60,7 @@ export class AuthService {
     this._accessToken = authResult.accessToken;
     this._idToken = authResult.idToken;
     this._expiresAt = expiresAt;
-    console.log(jwt_decode(this._idToken));
+    this.userName = jwt_decode(this._idToken).name;
   }
 
   public renewTokens(): void {

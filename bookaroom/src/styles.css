@@ -22,3 +22,28 @@
     background: #3cb878;
     opacity: 0.8;
 }
+
+.logOutButton {
+    width: 100px;
+    height: 40px;
+    margin-left: 10px;
+    background: #60061e;
+    border: none;
+    color: white;
+    border-radius: 5px;
+}
+
+.logOutButton:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.userName {
+    font-weight: bold;
+    color: white;
+    font-size: 25px;
+}
+
+.title{
+    color: whitesmoke;
+}

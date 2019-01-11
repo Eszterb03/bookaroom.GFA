@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #3cb878; opacity: 0.8;">
-    <a class="navbar-brand" href="#">Book a room in GFA</a>
+    <a class="navbar-brand title" href="#">Book a meeting room in GFA</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -29,4 +29,12 @@
             </li>
         </ul>
     </div>
+    <div class="userName">
+      {{auth.userName}}  
+    </div>
+    <button class="logOutButton"
+        *ngIf="auth.isAuthenticated()"
+        (click)="auth.logout()">
+          Log Out
+      </button>
 </nav>

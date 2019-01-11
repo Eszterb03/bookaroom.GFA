@@ -8,11 +8,7 @@
         </thead>
         <tbody>
             <tr class="first" *ngFor="let t of time; let i=index;" scope=" rowfirst">{{9+i}}-{{10+i}}
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-                <td>valaki</td>
-                <td>más valaki</td>
+                <td *ngFor="let i of rooms" (click)="book($event)"></td>
             </tr>
         </tbody>
     </table>

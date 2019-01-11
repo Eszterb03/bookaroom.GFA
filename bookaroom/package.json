@@ -20,11 +20,8 @@
     "@angular/platform-browser": "^6.1.0",
     "@angular/platform-browser-dynamic": "^6.1.0",
     "@angular/router": "^6.1.0",
-<<<<<<< HEAD
-    "auth0-js": "^9.8.2",
-=======
+    "auth0-js": "^9.9.0",
     "bootstrap": "^4.2.1",
->>>>>>> 89a70c14c620c50527da93064716a392035faa7f
     "core-js": "^2.5.4",
     "jwt-decode": "^2.2.0",
     "rxjs": "~6.2.0",
