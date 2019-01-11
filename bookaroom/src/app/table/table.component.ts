@@ -23,8 +23,13 @@ export class TableComponent implements OnInit {
 
   book(event){
     this.user = this.auth.userName;
-    event.target.style = 'background: #3cb878';
-    event.target.innerText = this.user;
+    if(event.target.innerText != this.user){
+      event.target.innerText = this.user;
+      event.target.style = 'background: #3cb878';
+    } else {
+      event.target.innerText = '';
+      event.target.style = '';
+    }
   }
 
 }
