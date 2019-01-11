@@ -1,5 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
 
+* {
+    cursor: pointer;
+}
+
 .body {
     display: flex;
     align-items: center;
@@ -12,6 +16,11 @@
     right: 0;
     left: 0;
     width: 80%;
+}
+
+tr.active td {
+    background-color: #123456 !important;
+    color: white;
 }
 
 .first {
