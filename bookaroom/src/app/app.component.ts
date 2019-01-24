@@ -15,6 +15,7 @@ export class AppComponent {
   ngOnInit() {
     if (localStorage.getItem('isLoggedIn') === 'true') {
       this.auth.renewTokens();
+      this.auth.scheduleRenewal();
     }
   }
 }
